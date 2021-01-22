@@ -1,0 +1,21 @@
+public class Factorial {
+
+ public static void main(String[] args) {
+//Factorial: Factorial is the operation of multiplying any natural number with all the natural numbers that are smaller than it
+//So for this example, we want to get the factorial of 5
+System.out.println(fact(5));
+}
+public static long fact(long n) {
+//The program will put 1 if the n is less than or equal to 1
+if(n <= 1)
+return 1;
+//If n is not 1, n will do the formula down below
+else
+//So this is recursion
+return n * fact(n-1);
+// return 4 * 3 * 2 * 1 = 120
+}
+}
+
+//Josef Ines
+//Stacy Cuenca
